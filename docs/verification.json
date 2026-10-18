@@ -39,7 +39,6 @@
     "output_quality_limit": "Initially said 16 words, then correctly counted 8."
   },
   "not_verified": [
-    "PR CI and mergeability",
     "Codex model invocation",
     "Codex desktop UI",
     "fresh nonmember/public installation",
@@ -71,6 +70,15 @@
         "files_written_by_model": false
       }
     },
-    "ci": "not configured"
+    "ci": "not configured",
+    "pull_request": {
+      "url": "https://github.com/Authority-Hacker/dcbkk-plugins/pull/1",
+      "state": "OPEN",
+      "draft": false,
+      "mergeable": true,
+      "merge_state": "CLEAN",
+      "reviews": 0,
+      "status_checks": 0
+    }
   }
 }
