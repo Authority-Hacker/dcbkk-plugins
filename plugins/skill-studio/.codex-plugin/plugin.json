@@ -1,0 +1,32 @@
+{
+  "name": "skill-studio",
+  "displayName": "Skill Studio",
+  "interface": {
+    "displayName": "Skill Studio",
+    "shortDescription": "Teach your AI how you like things done, through real work.",
+    "longDescription": "Do a task together, correct it in your own words, and save the way you like it as a skill that keeps learning when you correct it. Skill Studio asks a quick why where it matters, so the skill gets the next task right too, and tries every skill on your real work before installing it. If a skill will spend money or send things for you, you approve that once while it's built. Existing skills can be fixed, updated, put back, or tidied into one clean version after lots of quick changes, with a backup kept before every change.",
+    "developerName": "Authority Hacker",
+    "category": "Productivity",
+    "capabilities": [
+      "Analysis",
+      "Write"
+    ],
+    "websiteURL": "https://www.authorityhacker.com/",
+    "privacyPolicyURL": "https://www.authorityhacker.com/privacy-policy/",
+    "termsOfServiceURL": "https://www.authorityhacker.com/terms-and-conditions/",
+    "defaultPrompt": [
+      "Help with this task and remember how I like it.",
+      "Make this repeated task a skill.",
+      "Fix this skill without losing what already works.",
+      "Tidy this skill, it's got messy after lots of changes."
+    ],
+    "brandColor": "#2563EB"
+  },
+  "description": "Use when teaching the assistant how you like a repeated task done, from real work, corrections or rules, or when updating, fixing, tidying or restoring an existing skill. Asks why where it matters, tries each skill on real work, and keeps a backup before every change.",
+  "version": "0.10.0",
+  "skills": "./skills",
+  "author": {
+    "name": "Authority Hacker",
+    "email": "team@authorityhacker.com"
+  }
+}

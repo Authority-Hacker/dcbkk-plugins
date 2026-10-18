@@ -1,0 +1,10 @@
+{
+  "name": "skill-studio",
+  "displayName": "Skill Studio",
+  "description": "Use when teaching the assistant how you like a repeated task done, from real work, corrections or rules, or when updating, fixing, tidying or restoring an existing skill. Asks why where it matters, tries each skill on real work, and keeps a backup before every change.",
+  "version": "0.10.0",
+  "author": {
+    "name": "Authority Hacker",
+    "email": "team@authorityhacker.com"
+  }
+}
