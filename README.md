@@ -6,7 +6,7 @@ This marketplace is private until Gael explicitly approves making it public. Pri
 
 ## Install
 
-These GitHub commands apply once the marketplace PR is merged into the repository's default branch. Before merging, test its branch explicitly; see [release notes](docs/release.md). The private repository is [Authority-Hacker/dcbkk-plugins](https://github.com/Authority-Hacker/dcbkk-plugins). Until the PR is merged, its default branch is an empty bootstrap base; use the branch instructions in the release notes for private testing.
+[PR #1](https://github.com/Authority-Hacker/dcbkk-plugins/pull/1) is merged. These commands install from the default branch. The repository is private again after the approved brief anonymous installation test; until the final public release, testers need authorized GitHub read access.
 
 **Codex terminal**
 
@@ -32,7 +32,7 @@ In a Claude Code chat, the equivalents are `/plugin marketplace add Authority-Ha
 
 If another marketplace already supplies Skill Studio, choose which copy to keep enabled before using it. Don't remove other plugins or personal skills to fix an install. While this repo is private, a GitHub permission error requires an authorized GitHub account; it is not an AH activation step.
 
-The [attendee prompt](docs/install-prompt.md) is ready to copy after the default branch is populated and verified. Public access remains a separate release decision.
+The [attendee prompt](docs/install-prompt.md) passed separate Codex and Claude Code installation tests during a brief approved public window. Public access is now closed again; the final public release remains a separate decision.
 
 ## Source and checks
 

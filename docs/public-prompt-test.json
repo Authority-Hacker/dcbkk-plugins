@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-18",
+  "repository": "Authority-Hacker/dcbkk-plugins",
+  "merged_source_commit": "4c06d83520b282bb9eaf3dc7c5b7a3c63a1fd5c0",
+  "version": "0.10.0",
+  "first_cycle": {
+    "elapsed_seconds": 5.7,
+    "result": "GitHub public readback preceded anonymous Git readiness; no prompt tests ran; private restored"
+  },
+  "successful_cycle": {
+    "elapsed_seconds": 46.7,
+    "public_since_utc": "2026-10-18T15:04:04.806948+00:00",
+    "private_restored_utc": "2026-10-18T15:04:49.880790+00:00",
+    "anonymous_private_baseline_exit": 128,
+    "public_git_readiness_attempts": 3,
+    "anonymous_public_git_exit": 0,
+    "tests": {
+      "claude": {
+        "exit_code": 0,
+        "all_19_hashes_match": true,
+        "installed_file_count": 19
+      },
+      "codex": {
+        "exit_code": 0,
+        "all_19_hashes_match": true,
+        "installed_file_count": 19
+      }
+    },
+    "private_readback": {
+      "isPrivate": true,
+      "visibility": "PRIVATE"
+    },
+    "operator_plugin_settings_unchanged": true
+  },
+  "test_method": [
+    "Exact fenced attendee prompt supplied separately to Codex CLI and Claude Code models.",
+    "Only harness adaptation: each client must prefix install commands with its own disposable plugin-profile variable, so operator settings are preserved.",
+    "Git global/system credential helpers disabled; no GH/GitHub token variables, interactive credential prompts, or askpass login. Anonymous private baseline failed; public Git then succeeded.",
+    "Both model sessions used their normal existing account login; client model access is separate from anonymous Git access. No credentials copied into disposable profiles.",
+    "Both ran their correct client commands, installed only skill-studio@dcbkk-plugins 0.10.0, confirmed all four skill files, and requested a real task.",
+    "Both correctly declined to claim current-session or desktop loading after install, and stated the fresh-session boundary.",
+    "All 19 installed file hashes match the source lock. Fresh Codex app-server discovers all four enabled plugin skills from the anonymously installed cache."
+  ],
+  "limits": [
+    "Harness uses disposable plugin profiles and operator model accounts; not a full fresh machine or new model account.",
+    "Codex model invocation of the newly loaded event plugin and desktop UI remain unverified.",
+    "No external skill creation, improvement or cleanup task was performed.",
+    "No forks existed at final private readback; this cannot rule out external clones."
+  ],
+  "fresh_claude_runtime": {
+    "package_origin": "anonymous default-branch GitHub install",
+    "entry_point": "skill-studio:skill-studio",
+    "route_reference_read": "skills/skill-studio/references/learn-from-work.md",
+    "draft_output": "Doors open at 9am. Please bring your laptop.",
+    "word_count": 8,
+    "permission_denials": [],
+    "files_written_by_model": false
+  }
+}

@@ -1,6 +1,6 @@
 # Attendee installation prompt
 
-Release prerequisite: merge the marketplace PR, then verify the default branch. The repo stays private until Gael separately approves public access. Private testers need GitHub read access; public attendees should not need it after that release.
+PR #1 is merged. This prompt passed anonymous GitHub installation tests with both clients on 18 October 2026 during an approved brief public window. The repo is private again. Private testers currently need GitHub read access; public attendees will not need that after the final public release. See [test evidence](public-prompt-test.json) for method and limits.
 
 Copy this prompt into the local client you want to use:
 
