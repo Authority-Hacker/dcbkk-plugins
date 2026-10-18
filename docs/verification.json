@@ -39,12 +39,38 @@
     "output_quality_limit": "Initially said 16 words, then correctly counted 8."
   },
   "not_verified": [
-    "GitHub privacy readback",
-    "remote authenticated installation",
     "PR CI and mergeability",
     "Codex model invocation",
     "Codex desktop UI",
     "fresh nonmember/public installation",
     "full create/improve/tidy workflows"
-  ]
+  ],
+  "github": {
+    "repository": "https://github.com/Authority-Hacker/dcbkk-plugins",
+    "is_private": true,
+    "marketplace_branch": "codex/skill-studio-marketplace",
+    "default_branch": "main",
+    "default_branch_state": "empty bootstrap pending PR merge",
+    "authenticated_remote_installs": {
+      "codex": {
+        "installed": true,
+        "enabled": true,
+        "version": "0.10.0",
+        "all_19_hashes_match": true,
+        "all_four_runtime_skills_enabled": true
+      },
+      "claude": {
+        "installed": true,
+        "enabled": true,
+        "version": "0.10.0",
+        "all_19_hashes_match": true,
+        "entry_point_invoked": "skill-studio:skill-studio",
+        "route_reference_read": "skills/skill-studio/references/learn-from-work.md",
+        "draft_task_completed": true,
+        "permission_denials": [],
+        "files_written_by_model": false
+      }
+    },
+    "ci": "not configured"
+  }
 }

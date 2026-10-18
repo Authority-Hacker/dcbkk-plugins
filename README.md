@@ -6,7 +6,7 @@ This marketplace is private until Gael explicitly approves making it public. Pri
 
 ## Install
 
-These GitHub commands apply once the marketplace PR is merged into the repository's default branch. Before merging, test its branch explicitly; see [release notes](docs/release.md). The repository has not been created or pushed yet because automatic approval review blocked that action.
+These GitHub commands apply once the marketplace PR is merged into the repository's default branch. Before merging, test its branch explicitly; see [release notes](docs/release.md). The private repository is [Authority-Hacker/dcbkk-plugins](https://github.com/Authority-Hacker/dcbkk-plugins). Until the PR is merged, its default branch is an empty bootstrap base; use the branch instructions in the release notes for private testing.
 
 **Codex terminal**
 
