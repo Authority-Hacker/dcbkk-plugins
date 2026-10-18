@@ -1,0 +1,37 @@
+{
+  "plugin": "skill-studio",
+  "version": "0.10.0",
+  "snapshot_date": "2026-10-18",
+  "source_repository": "Authority-Hacker/ah-student-plugins",
+  "source_ref": "staging",
+  "source_commit": "1aad3456c7cbb3320d3b1fb4160c9ebe974a3a6e",
+  "live_gateway_bundle_commit": "8b5918effe262901ff7fc310a9d3c046a3521523",
+  "stale_direct_bundle_commit": "88cc5a8794f45190c90e6e9951ef27a91c2fe042",
+  "package_sha256": "5088842e6373cc908ea0170da37e92b1e2f47d8c13ee5ebf76958fd22fd41e61",
+  "hash_format": "sha256 of sorted lines: <file sha256> two spaces <relative POSIX path> newline",
+  "files": {
+    ".claude-plugin/plugin.json": "3f0642b8f8f5b6ed6ea00c5aa58f955c722f3a0dc72f03b1853d5fe1910ca1a9",
+    ".codex-plugin/plugin.json": "219f7e2055994d3a307b5465040becf4aa012426e2c52db80bcd4107bc05fdba",
+    "CHANGELOG.md": "f6118180cb6e9736031ff3d415790a48c9fe1fcec96c17db58a9e1f35b0b0c69",
+    "README.md": "5e51fbff5d929d6050003e42a209ddd54cb45404790d4a4df10bfcadb90a945c",
+    "skills/create-skill/SKILL.md": "a566c0594748cf7a552a28fbe094e1da020cd6a46abe70b8385ad1acc20dd014",
+    "skills/create-skill/references/authoring-rules.md": "305a7559795f2d41bc54f234e2ad5f9bf8f6103c6285cdda0a02a872e54536f1",
+    "skills/create-skill/references/backups.md": "dccc5d59f60903bb886703198a6be5db30ad0eed51c9b55bb8fb912f0723e26f",
+    "skills/create-skill/references/clarify.md": "f24d01a67d81a5e48424b783888f384f0da353d7160232e776f8166b36ad4347",
+    "skills/create-skill/references/interview-guide.md": "752b61fc6095fdbc218bdf2cd82e690cf7b4e5d800166d6ab58f8a7f6c423009",
+    "skills/create-skill/references/mechanics.md": "fe2c924aa1ae5ccf05616c171439883107a99ab8488d6434c8a76748e245043b",
+    "skills/create-skill/references/run-policy.md": "5f8671520115abddd80d6558e333513587d6a20eafc333ff1faa32029bd2cc28",
+    "skills/create-skill/references/skill-template.md": "b039917a51f56e76b9904eab5062cf14a1b1643ba3c0db8a68736c8af8d2d17a",
+    "skills/create-skill/references/targets-and-forks.md": "9b32a37f2d4c94142f27116a683ecc63db670cdfafa0048a76d19a4ed27896a4",
+    "skills/create-skill/scripts/check_skill.py": "b9f00cf6615584497592b79215faa9c80b8ba276e806381f83bc9b8c28e8e6f6",
+    "skills/improve-skill/SKILL.md": "92407d36060d0ffbd6e7ed455f7ea9836334fac453db9430b81e69ec2fb93668",
+    "skills/skill-studio/SKILL.md": "b4b31009ca98c85b2589f434ecedf7ff0323831672ff40e59e99471604419268",
+    "skills/skill-studio/references/learn-from-work.md": "ccf629ceb9e1fed1900b04f49eb07107bfdcbfa7d159b594ac4b941eaecc7f72",
+    "skills/tidy-skill/SKILL.md": "cd865b0f7a34aa66df726b62b6a2c5384d0afb7221a527eb652991ea7e32dee2",
+    "skills/tidy-skill/references/tidy-rules.md": "6ed9542c78dcbe5b02a67b66014a52e5cce2aae73dfe0aec4382fc1e47002bc5"
+  },
+  "packaging_differences": [
+    "Only .claude-plugin/plugin.json and .codex-plugin/plugin.json differ from live gateway: event package uses original upstream skill-studio identity and Skill Studio display names instead of staging suffixes.",
+    "Event plugin directory is byte-identical to the pinned student source. All skills, references, scripts, README and CHANGELOG are unchanged."
+  ]
+}

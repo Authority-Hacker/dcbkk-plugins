@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-18",
+  "plugin_id": "skill-studio@dcbkk-plugins",
+  "version": "0.10.0",
+  "package_sha256": "5088842e6373cc908ea0170da37e92b1e2f47d8c13ee5ebf76958fd22fd41e61",
+  "package_files": 19,
+  "catalog_validation": "Claude strict validation and scripts/verify.py passed",
+  "codex": {
+    "version": "0.163.0",
+    "install_source": "local marketplace",
+    "installed": true,
+    "enabled": true,
+    "all_file_hashes_match": true,
+    "runtime_skills_discovered": [
+      "skill-studio:create-skill",
+      "skill-studio:improve-skill",
+      "skill-studio:skill-studio",
+      "skill-studio:tidy-skill"
+    ],
+    "model_invocation": "not verified: disposable profile unauthenticated; credential linking rejected",
+    "desktop_ui": "not verified",
+    "isolation_limit": "plugin configuration isolated; personal skills outside CODEX_HOME remained discoverable"
+  },
+  "claude": {
+    "version": "2.1.302",
+    "install_source": "local marketplace",
+    "installed": true,
+    "enabled": true,
+    "all_file_hashes_match": true,
+    "runtime_model": "claude-opus-5-5",
+    "entry_point_invoked": "skill-studio:skill-studio",
+    "reference_read": "skills/skill-studio/references/learn-from-work.md",
+    "route": "learn from work",
+    "output": "Doors open at 9am. Please bring your laptop.",
+    "files_written_by_model": false,
+    "initial_failure": "test harness denied reference read outside working directory",
+    "repair": "explicitly allow reading exact installed plugin directory",
+    "repaired_permission_denials": [],
+    "output_quality_limit": "Initially said 16 words, then correctly counted 8."
+  },
+  "not_verified": [
+    "GitHub privacy readback",
+    "remote authenticated installation",
+    "PR CI and mergeability",
+    "Codex model invocation",
+    "Codex desktop UI",
+    "fresh nonmember/public installation",
+    "full create/improve/tidy workflows"
+  ]
+}
