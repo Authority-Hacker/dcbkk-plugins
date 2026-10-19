@@ -1,4 +1,5 @@
 ---
+user-invocable: false
 name: tidy-skill
 description: Use when a skill has picked up lots of quick edits and become long, repetitive or contradictory, or the person asks to tidy, simplify or clean it up. Rebuilds it into one coherent, leaner version that keeps every rule's effect and asks about clashing rules. Wrong output on a specific task or a single preference change belongs to improve-skill; a new job belongs to create-skill; ordinary documents are excluded.
 ---

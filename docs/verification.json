@@ -89,5 +89,6 @@
     "private_restored": true,
     "operator_plugin_settings_unchanged": true,
     "fresh_codex_runtime_all_four_skills": true
-  }
+  },
+  "record_type": "Historical upstream 0.10.0 baseline; see router-menu.json for the revised event package"
 }

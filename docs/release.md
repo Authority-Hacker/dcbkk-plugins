@@ -2,7 +2,15 @@
 
 Status: [PR #1](https://github.com/Authority-Hacker/dcbkk-plugins/pull/1) merged on 18 October 2026 at `4c06d83520b282bb9eaf3dc7c5b7a3c63a1fd5c0`. The default branch contains the complete marketplace. Gael approved a short public window for anonymous prompt testing; both clients passed. The repository is PRIVATE again (`isPrivate: true` independently read back), with no forks at final readback. No CI is configured. No production/staging service, website, or announcement was changed. Final public release remains separate.
 
-## Evidence from 18 October 2026
+## Router-menu revision on 19 October 2026
+
+The event package is now `0.10.0-dcbkk.1` based on the pinned upstream 0.10.0. Only the three specialists’ frontmatter and the two manifests change; workflow bodies, router text, references and script content remain unchanged. Claude uses `user-invocable: false` for specialists. Codex CLI 0.163.0 ignores that field, so its manifest discovers only `./skills/skill-studio`; the unchanged router reads its relative specialist links.
+
+Local disposable installs of the revised package passed. Claude 2.1.302 advertises only the router among this plugin’s slash commands; the visible router successfully invoked hidden improve-skill. That read-only test then stopped for a missing target; an exploratory search outside the allowed test directory was denied. Codex’s fresh skills registry lists only the enabled router, and all specialist links resolve. Desktop visual inspection and remote delivery of this revision remain unverified until its PR is merged. See [router-menu.json](router-menu.json).
+
+This revision is pending in PR #2; default-branch and public-window evidence below applies to the original 0.10.0 package. After merge, update/reinstall existing test copies and reload before checking the menu.
+
+## Baseline evidence from 18 October 2026
 
 - Pinned version: **0.10.0**. See `source-lock.json` for the exact student source, live gateway bundle, and all 19 file hashes. Event package content is unchanged from that student commit. Gateway and installed staging versions differ only in their two identity manifests.
 - Claude Code **2.1.302**: strict marketplace validation passes. Its informational advice suggests an install line inside the bundled README; that README stays unchanged to preserve the pinned artifact. Installation in a disposable `CLAUDE_CONFIG_DIR` succeeds, lists version 0.10.0 enabled, and all 19 installed file hashes match.

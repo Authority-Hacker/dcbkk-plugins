@@ -15,7 +15,7 @@ digest = hashlib.sha256("".join(f"{v}  {k}\n" for k, v in files.items()).encode(
 assert digest == lock["package_sha256"], "Aggregate hash differs"
 for client in [".claude-plugin", ".codex-plugin"]:
     manifest = json.loads((plugin / client / "plugin.json").read_text())
-    assert manifest["name"] == "skill-studio" and manifest["version"] == "0.10.0"
+    assert manifest["name"] == "skill-studio" and manifest["version"] == lock["version"]
 for path in [".claude-plugin/marketplace.json", ".agents/plugins/marketplace.json"]:
     catalog = json.loads((ROOT / path).read_text())
     assert catalog["name"] == "dcbkk-plugins" and len(catalog["plugins"]) == 1
@@ -26,6 +26,21 @@ for path in [".claude-plugin/marketplace.json", ".agents/plugins/marketplace.jso
     if isinstance(source, dict):
         assert source["source"] == "local"
         assert entry["policy"] == {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}
+# Keep upstream hashes and prove the exact, bounded event patch.
+for relative, original_hash in lock["upstream_files"].items():
+    content = (plugin / relative).read_bytes()
+    if relative in {"skills/create-skill/SKILL.md", "skills/improve-skill/SKILL.md", "skills/tidy-skill/SKILL.md"}:
+        assert content.count(b"user-invocable: false\n") == 1
+        content = content.replace(b"user-invocable: false\n", b"", 1)
+    elif relative in {".claude-plugin/plugin.json", ".codex-plugin/plugin.json"}:
+        original = json.loads(content)
+        original["version"] = lock["upstream_version"]
+        if relative.startswith(".codex-plugin/"):
+            assert original["skills"] == "./skills/skill-studio"
+            original["skills"] = "./skills"
+        content = (json.dumps(original, indent=2) + "\n").encode()
+    assert hashlib.sha256(content).hexdigest() == original_hash, f"Unexpected upstream change: {relative}"
+assert "user-invocable: false" not in (plugin / "skills/skill-studio/SKILL.md").read_text()
 expected = {"skill-studio", "create-skill", "improve-skill", "tidy-skill"}
 assert {p.parent.name for p in plugin.glob("skills/*/SKILL.md")} == expected
 for path in plugin.rglob("*.md"):
