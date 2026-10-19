@@ -2,13 +2,21 @@
 
 Status: [PR #1](https://github.com/Authority-Hacker/dcbkk-plugins/pull/1) merged on 18 October 2026 at `4c06d83520b282bb9eaf3dc7c5b7a3c63a1fd5c0`. The default branch contains the complete marketplace. Gael approved a short public window for anonymous prompt testing; both clients passed. The repository is PRIVATE again (`isPrivate: true` independently read back), with no forks at final readback. No CI is configured. No production/staging service, website, or announcement was changed. Final public release remains separate.
 
+## Humanizer addition on 19 October 2026
+
+The candidate adds only `humanizer@dcbkk-plugins` version `1.2.2-dcbkk.1`, the requested event alias for published Content Humanizer 1.2.2. It has one main skill, `humanizer:humanizer`, and no other skill menu entries. Both client manifests and catalogs agree on the event identity. Source-lock normalization proves only identity/headings/runtime paths differ; editing guidance and scanner logic are preserved. Skill Studio files remain unchanged.
+
+Humanizer is independent of AH member services and requires no remote API. The optional scanner uses Python standard-library modules. Preserve its packaged license and copyright attribution. Verify both clients list exactly the two intended main skills; run the package validator and scanner smoke, then use Humanizer on a supplied draft with protected quotes, facts and links. Both clients also installed both plugins from the private GitHub candidate branch; all 33 file hashes match, and a fresh Codex registry still contains exactly the two main entries. See [Humanizer source lock](humanizer-source-lock.json) and [verification](humanizer-verification.json).
+
+The repository stays private. This addition is not a request to alter staging/production catalogs, public visibility, or website/event announcements. Existing public prompt proof covers the earlier Skill Studio package; this candidate uses private install checks.
+
 ## Router-menu revision on 19 October 2026
 
 The event package is now `0.10.0-dcbkk.1` based on the pinned upstream 0.10.0. Only the three specialists’ frontmatter and the two manifests change; workflow bodies, router text, references and script content remain unchanged. Claude uses `user-invocable: false` for specialists. Codex CLI 0.163.0 ignores that field, so its manifest discovers only `./skills/skill-studio`; the unchanged router reads its relative specialist links.
 
 Local disposable installs of the revised package passed. Claude 2.1.302 advertises only the router among this plugin’s slash commands; the visible router successfully invoked hidden improve-skill. That read-only test then stopped for a missing target; an exploratory search outside the allowed test directory was denied. Codex’s fresh skills registry lists only the enabled router, and all specialist links resolve. Private GitHub PR-branch installs pass in both clients with all 19 hashes matching. Updating disposable existing 0.10.0 installs also succeeds using the documented commands; Claude explicitly reports the new version and requires restart. Default-branch delivery awaits this PR’s merge; desktop visual inspection remains unverified. See [router-menu.json](router-menu.json).
 
-This revision is pending in PR #2; default-branch and public-window evidence below applies to the original 0.10.0 package. After merge, update/reinstall existing test copies and reload before checking the menu.
+This revision merged in PR #2; default-branch and public-window evidence below applies to the original 0.10.0 package. After merge, update/reinstall existing test copies and reload before checking the menu.
 
 ## Baseline evidence from 18 October 2026
 
