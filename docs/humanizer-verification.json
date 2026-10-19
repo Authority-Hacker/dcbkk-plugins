@@ -42,9 +42,13 @@
     "dependencies": "Python standard library only; no remote API"
   },
   "not_verified": [
-    "Private GitHub PR-branch installation pending.",
     "Default-branch delivery pending PR merge.",
     "Codex model invocation and desktop UI not tested.",
     "Earlier anonymous/public prompt test covers only Skill Studio, not this new two-plugin prompt."
-  ]
+  ],
+  "remote_private_install": {
+    "branch": "codex/add-content-humanizer",
+    "codex": "both plugins installed; all 33 hashes match; only two main skill entries in runtime registry",
+    "claude": "both plugins installed; all 33 hashes match"
+  }
 }
