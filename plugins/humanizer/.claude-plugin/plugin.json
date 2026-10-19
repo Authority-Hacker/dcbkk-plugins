@@ -1,0 +1,10 @@
+{
+  "name": "humanizer",
+  "displayName": "Humanizer",
+  "description": "Use when you want to humanize an existing draft, make writing sound less robotic, or review AI-writing patterns without rewriting. Preserves meaning and voice across articles, emails, newsletters, and social posts.",
+  "version": "1.2.2-dcbkk.1",
+  "author": {
+    "name": "Authority Hacker",
+    "email": "team@authorityhacker.com"
+  }
+}

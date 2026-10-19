@@ -9,9 +9,14 @@
       "name": "skill-studio",
       "source": "./plugins/skill-studio",
       "description": "Use when teaching the assistant how you like a repeated task done, from real work, corrections or rules, or when updating, fixing, tidying or restoring an existing skill. Asks why where it matters, tries each skill on real work, and keeps a backup before every change."
+    },
+    {
+      "name": "humanizer",
+      "source": "./plugins/humanizer",
+      "description": "Use when you want to humanize an existing draft, make writing sound less robotic, or review AI-writing patterns without rewriting. Preserves meaning and voice across articles, emails, newsletters, and social posts."
     }
   ],
   "metadata": {
-    "description": "Skill Studio for DCBKK attendees using Codex or Claude Code."
+    "description": "Skill Studio and Humanizer for DCBKK attendees using Codex or Claude Code."
   }
 }

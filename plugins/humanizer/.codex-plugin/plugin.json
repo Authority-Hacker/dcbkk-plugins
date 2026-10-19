@@ -1,0 +1,16 @@
+{
+  "name": "humanizer",
+  "displayName": "Humanizer",
+  "description": "Use when you want to humanize an existing draft, make writing sound less robotic, or review AI-writing patterns without rewriting. Preserves meaning and voice across articles, emails, newsletters, and social posts.",
+  "version": "1.2.2-dcbkk.1",
+  "author": {
+    "name": "Authority Hacker",
+    "email": "team@authorityhacker.com"
+  },
+  "interface": {
+    "displayName": "Humanizer",
+    "shortDescription": "Make drafts sound natural",
+    "longDescription": "Make an existing draft sound more natural by removing generic phrasing, repetitive patterns, and other AI-writing tells. Use with articles, emails, newsletters, or social posts while preserving meaning, voice, quotations, and links. You can also ask for a pattern-only review without rewriting. Does not fact-check, detect plagiarism, or establish who wrote the text."
+  },
+  "skills": "./skills/"
+}
