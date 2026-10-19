@@ -26,8 +26,24 @@
   },
   "package_validation": "All 19 installed hashes match event lock; normalizing only the three frontmatter lines and two manifest metadata edits reproduces every original upstream file hash",
   "limits": [
-    "Local installs tested; GitHub PR-branch install pending final check.",
     "No desktop screenshot taken.",
-    "No change applied to operator installed plugins."
-  ]
+    "No change applied to operator installed plugins.",
+    "Default branch still has original package until this PR is merged; remote branch installation is verified."
+  ],
+  "remote_branch_install": {
+    "branch": "codex/public-install-proof",
+    "codex_installed_version": "0.10.0-dcbkk.1",
+    "claude_installed_version": "0.10.0-dcbkk.1",
+    "all_19_hashes_match_both_clients": true,
+    "codex_registry": [
+      "skill-studio:skill-studio"
+    ]
+  },
+  "existing_install_update": {
+    "from": "0.10.0",
+    "to": "0.10.0-dcbkk.1",
+    "codex": "marketplace upgrade followed by plugin add succeeded",
+    "claude": "marketplace update followed by plugin update returned updated; restart required",
+    "harness_repair": "The disposable Claude profile declares its marketplace ref in both settings and the local registry. Both were aligned before the update test; changing only the registry initially made marketplace resolution fail."
+  }
 }
