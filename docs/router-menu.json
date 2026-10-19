@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19",
+  "event_version": "0.10.0-dcbkk.1",
+  "upstream_version": "0.10.0",
+  "package_sha256": "12b9f45e5ce7ae64890273bdff1183f8523572b8de77a3235667972b2f3d5c06",
+  "scope": "DCBKK event marketplace only; no staging/production source changed",
+  "claude": {
+    "version": "2.1.302",
+    "event_slash_commands": [
+      "skill-studio:skill-studio"
+    ],
+    "model_invocations": [
+      "skill-studio:skill-studio",
+      "skill-studio:improve-skill"
+    ],
+    "workflow_text_changed": false,
+    "result": "Router handed lasting-preference request to hidden improve-skill; stopped before writing because no exact target was supplied",
+    "harness_limit": "One exploratory Glob outside the allowed work directory was denied; no file writes"
+  },
+  "codex": {
+    "version": "0.163.0",
+    "frontmatter_only_test": "user-invocable false left all four listed; ignored by this version",
+    "router_root_test": "skills=./skills/skill-studio lists only enabled skill-studio:skill-studio",
+    "specialist_access": "All unchanged relative paths resolve from installed router; Codex uses existing read-file fallback",
+    "model_invocation_of_event_package": "not verified"
+  },
+  "package_validation": "All 19 installed hashes match event lock; normalizing only the three frontmatter lines and two manifest metadata edits reproduces every original upstream file hash",
+  "limits": [
+    "No desktop screenshot taken.",
+    "No change applied to operator installed plugins.",
+    "Default branch still has original package until this PR is merged; remote branch installation is verified."
+  ],
+  "remote_branch_install": {
+    "branch": "codex/public-install-proof",
+    "codex_installed_version": "0.10.0-dcbkk.1",
+    "claude_installed_version": "0.10.0-dcbkk.1",
+    "all_19_hashes_match_both_clients": true,
+    "codex_registry": [
+      "skill-studio:skill-studio"
+    ]
+  },
+  "existing_install_update": {
+    "from": "0.10.0",
+    "to": "0.10.0-dcbkk.1",
+    "codex": "marketplace upgrade followed by plugin add succeeded",
+    "claude": "marketplace update followed by plugin update returned updated; restart required",
+    "harness_repair": "The disposable Claude profile declares its marketplace ref in both settings and the local registry. Both were aligned before the update test; changing only the registry initially made marketplace resolution fail."
+  }
+}

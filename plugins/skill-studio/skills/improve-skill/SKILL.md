@@ -1,4 +1,5 @@
 ---
+user-invocable: false
 name: improve-skill
 description: Use when an existing skill or taught workflow gives wrong output, misses rules, loses voice, fails to trigger, needs a lasting preference changed, or needs rollback, such as "fix my skill", "always do X from now on" or "put it back". Small preference changes get a quick backed-up edit; real failures get the smallest repair, proved on the input that failed. New skills belong to create-skill; a skill that has grown messy or contradictory belongs to tidy-skill; one-off output edits do not belong here.
 ---

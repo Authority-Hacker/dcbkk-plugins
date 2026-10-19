@@ -41,7 +41,6 @@
   "not_verified": [
     "Codex model invocation",
     "Codex desktop UI",
-    "fresh nonmember/public installation",
     "full create/improve/tidy workflows"
   ],
   "github": {
@@ -49,7 +48,7 @@
     "is_private": true,
     "marketplace_branch": "codex/skill-studio-marketplace",
     "default_branch": "main",
-    "default_branch_state": "empty bootstrap pending PR merge",
+    "default_branch_state": "marketplace merged and default-branch anonymous installation tested",
     "authenticated_remote_installs": {
       "codex": {
         "installed": true,
@@ -73,12 +72,23 @@
     "ci": "not configured",
     "pull_request": {
       "url": "https://github.com/Authority-Hacker/dcbkk-plugins/pull/1",
-      "state": "OPEN",
+      "state": "MERGED",
       "draft": false,
       "mergeable": true,
       "merge_state": "CLEAN",
       "reviews": 0,
-      "status_checks": 0
+      "status_checks": 0,
+      "merged_at": "2026-10-18T15:01:27Z",
+      "merge_commit": "4c06d83520b282bb9eaf3dc7c5b7a3c63a1fd5c0"
     }
-  }
+  },
+  "public_prompt_test": {
+    "evidence": "public-prompt-test.json",
+    "both_clients_installed_anonymously": true,
+    "all_19_hashes_match": true,
+    "private_restored": true,
+    "operator_plugin_settings_unchanged": true,
+    "fresh_codex_runtime_all_four_skills": true
+  },
+  "record_type": "Historical upstream 0.10.0 baseline; see router-menu.json for the revised event package"
 }

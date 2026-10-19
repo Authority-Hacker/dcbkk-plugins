@@ -1,4 +1,5 @@
 ---
+user-invocable: false
 name: create-skill
 description: Use when turning a repeated task and the user's way of doing it into a skill for Claude Code or Codex, such as "make me a skill", "save how I do this" or "good, save that" after finished work. Works from a brief, examples or an accepted task, asks why where a reason matters, and tries the skill on real work before installing. For a task to do now while preferences are still forming, use skill-studio; for an existing skill's failure, preference change or rollback, use improve-skill; for a skill that has grown messy or contradictory, use tidy-skill.
 ---
