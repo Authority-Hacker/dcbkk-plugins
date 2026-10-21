@@ -1,6 +1,6 @@
 # Attendee installation prompt
 
-The current candidate adds Humanizer alongside the merged Skill Studio package. After that PR is merged, this prompt installs both from the default branch. The repository remains private; current testers need GitHub read access. Earlier Skill Studio-only public prompt tests are historical evidence in [public-prompt-test.json](public-prompt-test.json); two-plugin validation is recorded separately in [humanizer-verification.json](humanizer-verification.json).
+The public DCBKK marketplace contains Skill Studio `0.10.0-dcbkk.1` and Humanizer `1.2.2-dcbkk.1`. Both are released on the default branch. No GitHub login or AH membership is required; use your own supported client and model account.
 
 Copy this prompt into the local client you want to use:
 
@@ -21,7 +21,7 @@ claude plugin install humanizer@dcbkk-plugins
 
 Claude Code chat equivalents use /plugin marketplace add and /plugin install with the same source and plugin ID. Don't run Claude commands in Codex or invent a universal chat command.
 
-If you can't run the installation here, give me only the steps for my client. If another Skill Studio or Humanizer copy is enabled, ask which copy to keep; preserve my other plugins and personal skills. While the repo is private, use my authorized GitHub access. Don't ask for AH membership, paste credentials into chat, or bypass repository permissions.
+If you can't run the installation here, give me only the steps for my client. If another Skill Studio or Humanizer copy is enabled, ask which copy to keep; preserve my other plugins and personal skills. This repository is public and needs no GitHub login or AH membership. Do not paste credentials into chat or bypass repository permissions.
 
 Verify Skill Studio 0.10.0-dcbkk.1 and Humanizer 1.2.2-dcbkk.1 are installed and enabled. Tell me if I need to restart/reload or start a new chat. After that, confirm only skill-studio:skill-studio and humanizer:humanizer are listed for this marketplace in the skill/slash menu. The router must still be able to use create-skill, improve-skill and tidy-skill internally. Don't claim a terminal install proves the desktop app loaded them.
 
