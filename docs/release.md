@@ -1,6 +1,14 @@
-# Private verification and release handoff
+# Public release and verification handoff
 
-Status: [PR #1](https://github.com/Authority-Hacker/dcbkk-plugins/pull/1) merged on 18 October 2026 at `4c06d83520b282bb9eaf3dc7c5b7a3c63a1fd5c0`. The default branch contains the complete marketplace. Gael approved a short public window for anonymous prompt testing; both clients passed. The repository is PRIVATE again (`isPrivate: true` independently read back), with no forks at final readback. No CI is configured. No production/staging service, website, or announcement was changed. Final public release remains separate.
+Status: PUBLIC. Gael authorized the final release on 21 October 2026. Only `Authority-Hacker/dcbkk-plugins` changed visibility. The released package commit is `d1334fb4a3eb849902e932bdc6a431ce96835954` (merged PR #3), containing Skill Studio `0.10.0-dcbkk.1` and Humanizer `1.2.2-dcbkk.1`. Release documentation may advance main without changing either package.
+
+The release checks passed: both catalogs contain exactly these two plugins, all 33 package files match their source locks, links resolve, Claude strict marketplace validation passes, and Humanizer scanner smoke inputs return the expected clean/candidate results. All 76 historical file blobs were checked for credential patterns, private gateway URLs, personal Mac paths and credential-bearing URLs, with no findings. This is a scoped exposure check, not a full security audit. GitHub has no configured check runs or commit statuses for this commit.
+
+The earlier sections below record preparation and temporary tests as they happened. References to private visibility and pending PR merges in those historical records do not describe the current public release. The live installation prompt and README describe the current two-plugin release.
+
+Public verification on 21 October: anonymous Git default-branch clone succeeded with Git system/global configs, credential helpers, token environment variables and prompts disabled. Codex 0.163.0 and Claude Code 2.1.304 then installed both packages into disposable profiles through the exact client-specific commands in the attendee prompt. Both report the requested versions installed and enabled, and all 33 installed file hashes match their locks. A fresh Codex app-server registry exposes exactly `skill-studio:skill-studio` and `humanizer:humanizer`, both enabled. Claude component inventory confirms all four Skill Studio workflows and the Humanizer skill are installed. Historical Claude main-menu and invocation checks apply to the same unchanged package bytes. No browser was needed.
+
+Limits: CLI installation does not establish desktop loading or complete create/improve/tidy workflow acceptance. No operator credentials or plugin settings were copied or changed. No other marketplace, website, service, or credential/security setting changed.
 
 ## Humanizer addition on 19 October 2026
 
@@ -36,12 +44,8 @@ Git authentication was disabled in these tests. Anonymous access failed while pr
 
 All 19 public-installed file hashes match the source lock. A fresh Codex app-server scan discovers all four enabled event-plugin skills from that cache. A fresh Claude session also invoked `skill-studio:skill-studio` from the public-installed package, read `learn-from-work.md`, and produced the correct eight-word draft with no permission denials or file writes. Model-account authentication was normal; only Git repository access was anonymous. These tests do not prove a completely fresh machine, fresh model account, or Codex desktop UI. No credentials were copied into test profiles. A later private readback reported zero forks, which cannot prove that no one cloned the briefly public repository.
 
-## Public release is a later decision
+## Public release policy
 
-1. Get Gael's explicit approval to change GitHub visibility. Confirm the desired redistribution/license terms; none are invented here.
-2. Check the exact default-branch package hash, catalogs, README and attendee prompt. Ensure only Skill Studio is distributed and no credentials, private gateway URLs, local machine paths, or unrelated material are included.
-3. Make the approved visibility change, then read back `isPrivate: false`.
-4. From unauthenticated, clean Git/client environments, test GitHub clone and both client installations, installed hashes, four visible skills, and a meaningful Skill Studio entry point. Check Codex desktop separately from its CLI. No AH membership should be required.
-5. If any check fails, hold attendee distribution and diagnose. This checklist does not authorize announcement, website publication, spending, or changes to other marketplaces.
+The final public release is now authorized and complete. Keep this repository public. Future releases must verify the exact default-branch packages and catalogs, preserve the one-main-menu-entry policy for each plugin, check exposure risks, and verify anonymous Git/client delivery. Do not infer authorization to alter other marketplaces, websites, credentials, or security settings from this event release.
 
 The eventual event resource route `authorityhacker.com/aibuildlab/` is outside this repo and this task. No website is implemented or deployed here.

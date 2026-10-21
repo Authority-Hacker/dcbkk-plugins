@@ -4,11 +4,11 @@ Skill Studio **0.10.0**, event package **0.10.0-dcbkk.1**, for Codex and Claude 
 
 **Humanizer 1.2.2-dcbkk.1** adds natural-sounding edits and pattern-only reviews, based on published Content Humanizer 1.2.2. Its marketplace and skill name are both `humanizer`. The marketplace contains only these two plugins and exposes one menu entry for each.
 
-This marketplace is private until Gael explicitly approves making it public. Private testers need GitHub read access and working Git authentication. The plugin itself needs no Authority Hacker membership, API key, MCP server, or paid add-on. Use your own supported client and model account.
+This marketplace is public for DCBKK attendees. Installation needs no GitHub login. The plugin itself needs no Authority Hacker membership, API key, MCP server, or paid add-on. Use your own supported client and model account.
 
 ## Install
 
-[PR #1](https://github.com/Authority-Hacker/dcbkk-plugins/pull/1) is merged. These commands install from the default branch. The repository is private again after the approved brief anonymous installation test; until the final public release, testers need authorized GitHub read access.
+These commands install both released plugins from the public default branch. Skill Studio is `0.10.0-dcbkk.1`; Humanizer is `1.2.2-dcbkk.1`.
 
 **Codex terminal**
 
@@ -34,17 +34,18 @@ In a Claude Code chat, the equivalents are `/plugin marketplace add Authority-Ha
 
 **Check it works:** in a new chat, say “Use Skill Studio. Help with this task and remember how I like it,” followed by a real task. It should use the Skill Studio entry point and the relevant route. For Skill Studio, only the `skill-studio:skill-studio` router should appear in the skill menu. Humanizer adds exactly one other entry, `humanizer:humanizer`. It chooses create, improve, or tidy internally. If routing misses it, choose the namespaced `skill-studio:skill-studio` entry from your client's skill picker.
 
-If another marketplace already supplies Skill Studio, choose which copy to keep enabled before using it. Don't remove other plugins or personal skills to fix an install. While this repo is private, a GitHub permission error requires an authorized GitHub account; it is not an AH activation step.
+If another marketplace already supplies Skill Studio, choose which copy to keep enabled before using it. Don't remove other plugins or personal skills to fix an install. If installation fails, check the exact repository URL and client version; no AH activation step is required.
 
-The original 0.10.0 [attendee prompt](docs/install-prompt.md) passed separate Codex and Claude Code installation tests during a brief approved public window. The menu patch is verified separately; its installation commands are unchanged. Public access is now closed again; the final public release remains a separate decision.
+The [attendee prompt](docs/install-prompt.md) installs both released packages. The release verification and historical client checks are recorded in [the release handoff](docs/release.md).
 
 ## Update an existing test install
 
-After this PR is merged, refresh the marketplace and plugin in the same profile you installed into:
+Refresh the marketplace and both plugins in the same profile you installed into:
 
 ```sh
 codex plugin marketplace upgrade dcbkk-plugins
 codex plugin add skill-studio@dcbkk-plugins
+codex plugin add humanizer@dcbkk-plugins
 ```
 
 For Claude Code:
@@ -52,9 +53,10 @@ For Claude Code:
 ```sh
 claude plugin marketplace update dcbkk-plugins
 claude plugin update skill-studio@dcbkk-plugins
+claude plugin update humanizer@dcbkk-plugins
 ```
 
-Reload or start a new session, then check the installed version is `0.10.0-dcbkk.1` and only the router is listed.
+Reload or start a new session, then check Skill Studio is `0.10.0-dcbkk.1`, Humanizer is `1.2.2-dcbkk.1`, and only their two main entries are listed.
 
 ## Humanizer source and checks
 
